@@ -1,3 +1,24 @@
+# Andi Parser
+
+```
+Service Information
+service: postlight
+stage: prod
+region: us-west-2
+stack: postlight-prod
+resources: 24
+api keys:
+  None
+endpoints:
+  GET - https://l9196eoqs0.execute-api.us-west-2.amazonaws.com/prod/parser
+  POST - https://l9196eoqs0.execute-api.us-west-2.amazonaws.com/prod/parse-html
+functions:
+  postlightParser: postlight-prod-postlightParser
+  parseHtml: postlight-prod-parseHtml
+layers:
+  None
+```
+
 # Postlight Parser API
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/postlight/parser-api.svg)](https://greenkeeper.io/)
