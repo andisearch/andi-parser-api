@@ -18,10 +18,10 @@ provider:
   runtime: nodejs12.x
   # If you want to change to a different AWS profile
   # from ~/.aws/credentials, you can do so here
-  profile: default
+  profile: lazyweb-amplify
   # you can overwrite defaults here
   #  stage: dev
-  #  region: us-east-1
+  region: us-west-2
 
 custom:
   webpack:
@@ -32,8 +32,9 @@ custom:
 functions:
   postlightParser:
     handler: src/parser.default
-    timeout: 10
-    memorySize: 256
+    timeout: 18
+    memorySize: 2048
+    provisionedConcurrency: 4
     events:
       - http:
           method: get
@@ -46,7 +47,7 @@ functions:
 
   parseHtml:
     handler: src/parse-html.default
-    timeout: 10
+    timeout: 18
     memorySize: 256
     events:
       - http:
