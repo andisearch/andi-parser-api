@@ -42,8 +42,9 @@ yarn install
 To spin up a local dev server that will more closely match the API Gateway endpoint/experience:
 
 ```bash
-yarn serve
+yarn serve --port 3005
 ```
+
 
 ## Deploy
 
