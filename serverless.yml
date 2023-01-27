@@ -32,8 +32,8 @@ custom:
 functions:
   postlightParser:
     handler: src/parser.default
-    timeout: 18
-    memorySize: 2048
+    timeout: 30
+    memorySize: 10240
     provisionedConcurrency: 4
     events:
       - http:
@@ -47,8 +47,8 @@ functions:
 
   parseHtml:
     handler: src/parse-html.default
-    timeout: 18
-    memorySize: 256
+    timeout: 30
+    memorySize: 10240
     events:
       - http:
           method: post

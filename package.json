@@ -22,7 +22,7 @@
     "test:html": "serverless invoke local --function parseHtml --path fixtures/html.json"
   },
   "dependencies": {
-    "@postlight/parser": "^2.2.2",
+    "@postlight/parser": "^2.2.3",
     "@types/aws-lambda": "^8.10.15"
   },
   "devDependencies": {
