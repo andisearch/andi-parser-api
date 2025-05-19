@@ -15,7 +15,7 @@ service: postlight
 
 provider:
   name: aws
-  runtime: nodejs16.x
+  runtime: nodejs22.x
   # If you want to change to a different AWS profile
   # from ~/.aws/credentials, you can do so here
   profile: lazyweb-amplify
@@ -48,7 +48,7 @@ functions:
   parseHtml:
     handler: src/parse-html.default
     timeout: 18
-    memorySize: 10240
+    memorySize: 1769
     events:
       - http:
           method: post
