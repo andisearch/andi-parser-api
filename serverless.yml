@@ -48,7 +48,7 @@ functions:
   parseHtml:
     handler: src/parse-html.default
     timeout: 18
-    memorySize: 1769
+    memorySize: 512
     events:
       - http:
           method: post
