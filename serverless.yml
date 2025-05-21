@@ -33,7 +33,7 @@ functions:
   postlightParser:
     handler: src/parser.default
     timeout: 18
-    memorySize: 1769
+    memorySize: 512
     provisionedConcurrency: 4
     events:
       - http:
